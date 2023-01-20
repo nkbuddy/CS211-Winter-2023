@@ -8,6 +8,7 @@ int main() {
   nc: c++;
   if(c==8) goto print;
   r = -1;
+  
   nr: r++;
   if(r == 8) goto backtrack;
 
@@ -28,7 +29,6 @@ int main() {
 
   //b[r][c] is safe, place a queen
   b[r][c] = 1;
-
   goto nc;
 
   backtrack:
